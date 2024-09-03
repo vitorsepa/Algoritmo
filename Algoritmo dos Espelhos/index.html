@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Algoritmo dos Espelhos</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="glass">
+        <div id="titulo">
+            <strong><p>Espelhos Esféricos</p></strong>
+            <h1>Um algoritmo que realiza funções de espelhos.</h1>
+        </div>
+        <div id="inputs">
+            <div class="input-container1">
+                <input id="foco" placeholder="Digite o foco(f)" class="input-field" type="number">
+                <label for="foco" class="input-label">Digite o foco</label>
+                <span class="input-highlight"></span>
+            </div>
+            <div class="input-container2">
+                <input id="distancia" placeholder="Digite a distância do objeto(p)" class="input-field" type="number">
+                <label for="distancia" class="input-label">Digite a distância do objeto</label>
+                <span class="input-highlight"></span>
+            </div>
+            <div class="input-container3">
+                <input id="altura" placeholder="Digite a altura do objeto(y)" class="input-field" type="number">
+                <label for="altura" class="input-label">Digite a altura</label>
+                <span class="input-highlight"></span>
+            </div>
+        </div>
+        <div id="botao">
+            <button type="button"><strong>Calcular</strong></button>
+        </div>
+    </div>
+
+    <div class="resultadooriginal">
+        <div class="resultado">
+            <h2 class="resultado">Resultado:</h2>
+            <strong><span class="resultado"></span></strong>
+        </div>
+    </div>
+
+    <!-- Div para o jumpscare -->
+    <div id="jumpscare" class="jumpscare">
+        <img id="imagemJumpscare" src="golden.gif" alt="Jumpscare">
+    </div>
+
+    <script src="index.js" defer></script>
+</body>
+</html>

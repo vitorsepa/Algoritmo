@@ -1,0 +1,171 @@
+
+#titulo{
+    display: grid;
+    place-items: center;
+}
+
+p{
+    font-family:'Courier New', Courier, monospace;
+    font-size: 50px;
+    gap: 30px;
+    text-align: center;
+    margin: 1px;
+    text-shadow: 5px 5px 5px rgba(0, 0, 0, 0.2);
+}
+
+h1{
+    font-family:'Courier New', Courier, monospace;
+    font-size: 17px;
+    font-style: oblique;
+    gap: 30px;
+    margin: 10px;
+    text-align: center;
+}
+
+body {
+    background: url("Design\ sem\ nome.png") no-repeat center center fixed;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+  }
+
+  .glass {
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 30px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(3px);
+    -webkit-backdrop-filter: blur(10px);
+    border: 5px solid rgba(0, 0, 0, 0.3);
+    padding: 20px;
+    width: 300px;
+    text-align: center;
+    height: 400px;
+  }
+
+
+#inputs{
+    padding: 10px;
+}
+
+
+
+.input-container {
+    position: relative;
+    margin: 20px;
+  }
+  
+  .input-field {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: none;
+    border-bottom: 2px solid #ccc;
+    outline: none;
+    background-color: transparent;
+  }
+  
+  .input-label {
+    position: absolute;
+    top: 0;
+    left: 0;
+    font-size: 16px;
+    color: rgba(204, 204, 204, 0);
+    pointer-events: none;
+    transition: all 0.3s ease;
+  }
+  
+  .input-field:focus + .input-label + .input-highlight {
+    width: 100%;
+  }
+
+button {
+  width: 9em;
+  height: 3em;
+  border-radius: 30em;
+  font-size: 15px;
+  font-family:'Courier New', Courier, monospace;
+  border: none;
+  color:black;
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+  box-shadow: 6px 6px 12px #c5c5c5,
+              -6px -6px 12px #ffffff;
+ }
+ 
+ button::before {
+  content: '';
+  width: 0;
+  height: 3em;
+  border-radius: 30em;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-image: linear-gradient(to right, #888888 0%, #c4c4c4 100%);
+  transition: .5s ease;
+  display: block;
+  z-index: -1;
+ }
+ 
+ button:hover::before {
+  width: 9em;
+ }
+
+h2{
+  font-family:'Courier New', Courier, monospace;
+  font-size: 50px;
+  gap: 30px;
+  text-align: center;
+  margin: 1px;
+  text-shadow: 5px 5px 5px rgba(0, 0, 0, 0.2);
+}
+
+span{
+  font-family:'Courier New', Courier, monospace;
+  font-size: 17px;
+  font-style: oblique;
+  gap: 30px;
+  margin: 50px;
+  width: 12px;
+  text-align: center;
+}
+
+.resultadooriginal{
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 30px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(3px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 5px solid rgba(0, 0, 0, 0.3);
+  padding: 40px;
+  width: 300px;
+  text-align: center;
+  height: 360px;
+  margin: 10px;
+}
+
+/* style.css */
+
+/* Estilo para a div que exibe o jumpscare */
+.jumpscare {
+  position: fixed; /* Fica fixo na tela */
+  top: 0;
+  left: 0;
+  width: 100vw; /* 100% da largura da tela */
+  height: 100vh; /* 100% da altura da tela */
+  display: none; /* Inicialmente oculto */
+  justify-content: center; /* Centraliza horizontalmente */
+  align-items: center; /* Centraliza verticalmente */
+  background-color: rgba(0, 0, 0, 0.8); /* Fundo escuro com transparência */
+  z-index: 1000; /* Fica acima de outros elementos */
+}
+
+.jumpscare img {
+  max-width: 100o0; /* Ajusta a largura da imagem */
+  max-height: 100%; /* Ajusta a altura da imagem */
+  display: block; /* Remove espaços abaixo da imagem */
+}
